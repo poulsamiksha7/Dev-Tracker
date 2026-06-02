@@ -10,6 +10,8 @@ def add_applications():
     applications.append(data)
     return jsonify(data),201
 
-
+@app.route('/applications', methods=['GET'])
+def get_applications():
+    return jsonify({'applications':applications})
 if __name__=='__main__':
     app.run(debug='True')
