@@ -57,8 +57,8 @@ def update_application(id):
 
 @app.route('/applications/<int:id>', methods=['DELETE'])
 def delete_application(id):
-    app=Applications.query.get_or_404(id)
-    db.session.delete(app)
+    del_app=Applications.query.get_or_404(id)
+    db.session.delete(del_app)
     db.session.commit()
     return jsonify({'message':'ID Deleted'}),200
 

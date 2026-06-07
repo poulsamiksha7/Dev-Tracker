@@ -1,12 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="/static/style.css">
 </head>
+
 <body>
-    <h1>Welcome to Dev-Tracking API</h1>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+
+                <a class="navbar-brand" href="#">Dev Tracker</a>
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Applications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Add Applications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Follow Ups</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <h1>Welcome to Dev Tracker</h1>
+        <h4>API ENDPOINTS</h4>
+        <table class="table table-striped table-hover">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Method</th>
+          <th scope="col">Endpoint</th>
+          <th scope="col">Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>GET</td>
+          <td>/applications </td>
+          <td>Fetch all applications</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>POST</td>
+          <td>/applications</td>
+          <td>Create new application</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>PUT</td>
+          <td>/applications/id</td>
+          <td>Update application</td>
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td>DELETE</td>
+          <td>/applications/id</td>
+          <td>Delete application</td>
+        </tr>
+      </tbody>
+    </table>
+</div>
 </body>
-</html>
+
+</html>>
